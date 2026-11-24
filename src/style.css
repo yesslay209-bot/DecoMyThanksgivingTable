@@ -76,3 +76,163 @@
 .final-table .table-canvas{width:100%;transform:none}
 .table-canvas .placed-item:not(.readonly){touch-action:none}
 .finish-actions{flex-wrap:wrap;max-width:420px}.finish-actions>*{white-space:nowrap}
+/* Menu */
+.menu-button{width:36px;height:36px;border-radius:50%;background:#f0e1ce;display:grid;place-content:center;gap:4px;padding:0}.menu-button span{display:block;width:16px;height:2px;border-radius:2px;background:#8f5a3d}.menu-button:hover{background:#e8ceb0}
+.home-top-actions{display:flex;gap:10px;align-items:center}
+.menu-backdrop{place-items:center end;padding:12px}.menu-backdrop .modal{width:min(380px,100%);background:#2f4a3c;color:#f6ecdc;border-radius:22px;animation:menu-in .2s ease-out}.menu-backdrop .modal-x{background:#3d5a4a;color:#f6ecdc}
+.menu-title{text-align:center;color:#fff6e7}.menu-list{list-style:none;margin:16px 0 0;padding:0}.menu-list li+li{border-top:1px solid #ffffff1c}
+.menu-list button,.menu-list a{width:100%;display:flex;align-items:center;gap:14px;padding:15px 6px;background:none;color:#f6ecdc;font-size:16px;text-decoration:none;text-align:left}.menu-list button:hover,.menu-list a:hover{color:#fff;background:#ffffff0d}
+.menu-list .mi{width:26px;text-align:center;font-size:18px;opacity:.9}.menu-list .ml{flex:1}.menu-list b{color:#c9d8cd;font-weight:400}.menu-list em{font-style:normal;font-size:12px;background:#ffffff1f;border-radius:10px;padding:1px 8px}
+.menu-foot{text-align:center;margin:18px 0 0;color:#b9c9bd;font-size:13px}.menu-foot button,.menu-foot a{background:none;color:#b9c9bd;text-decoration:none;font-size:13px}.menu-foot button:hover,.menu-foot a:hover{color:#fff}
+@keyframes menu-in{from{opacity:0;transform:translateX(20px)}}
+/* Locked pieces + unlock progress */
+.food-card.locked{opacity:.72}.food-card.locked img{filter:grayscale(.85) brightness(.95)}.food-card.locked .card-info i{opacity:1;color:#a38a78}
+.card-art{position:relative}.lock-badge{position:absolute;top:8px;right:8px;background:#4b352ce6;color:#fff6e7;font-size:10px;font-weight:700;border-radius:10px;padding:3px 7px}
+.mini-grid .lock-badge{top:4px;right:4px;font-size:9px;padding:2px 5px}
+.unlock-box{display:block;width:100%;text-align:left;background:#fff7ea;border:1px dashed #e0b88b;border-radius:10px;padding:11px 12px;margin:-8px 0 18px;color:var(--ink)}.unlock-box small{display:block;font-size:10px;color:#a07a5e;text-transform:uppercase;letter-spacing:.05em;font-weight:700}.unlock-box b{display:block;font:600 14px/1.3 Fraunces,serif;margin:4px 0 8px}.unlock-box i{display:block;font-style:normal;font-size:11px;color:var(--orange);margin-top:7px;font-weight:600}
+.unlock-bar{display:block;height:6px;border-radius:4px;background:#efdfc8;overflow:hidden}.unlock-bar span{display:block;height:100%;background:linear-gradient(90deg,#d99458,var(--orange));border-radius:4px}
+.unlock-box.done{border-style:solid;background:#f1f3e6;border-color:#c8d1a8}
+.unlock-tiers{display:grid;gap:6px;margin:6px 0 4px}.unlock-tiers div{display:flex;gap:12px;align-items:baseline;background:#f8eedf;border-radius:8px;padding:8px 10px}.unlock-tiers b{flex:none;color:var(--orange);font-size:13px;min-width:64px}.unlock-tiers span{font-size:13px;color:#6c4b3b}
+.how-list{padding-left:20px;margin:6px 0 16px;line-height:1.55;color:#6c4b3b}.how-list li{margin-bottom:8px}.how-list b{color:var(--ink)}
+.policy p{line-height:1.6;color:#6c4b3b;margin:0 0 12px}.policy b{color:var(--ink)}
+.listed-check{align-items:flex-start;white-space:normal;margin:12px 0 2px;line-height:1.4}.listed-check input{margin-top:3px}.listed-check small{display:block;color:#a38a78;font-size:12px}
+a.card-row{text-decoration:none;color:inherit}
+/* Card pages */
+.card-pager{position:absolute;z-index:40;left:50%;bottom:3%;transform:translateX(-50%);display:flex;align-items:center;gap:8px;background:#4b352cdd;color:#fff6e7;border-radius:20px;padding:4px 6px;font-size:12px;font-weight:600;white-space:nowrap}.card-pager button{width:26px;height:26px;border-radius:50%;background:#ffffff26;color:#fff;font-size:16px;line-height:1}.card-pager button:disabled{opacity:.35;cursor:default}
+/* Leaderboard */
+.leaderboard-page{min-height:100vh;background:radial-gradient(circle at 50% 0,#fff8e9 0,#f8eedd 55%,#f0dcc2 100%)}.lb-inner{max-width:640px;margin:auto;padding:5vh 20px 60px}.lb-inner h1{font:600 clamp(36px,6vw,54px)/1 Fraunces,serif;letter-spacing:-.03em;margin:0}.lb-sub{color:#927766;margin:14px 0 24px;line-height:1.6}
+.lb-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}.lb-list li{display:flex;align-items:center;gap:12px;background:#fffaf2;border:1px solid #eddfcc;border-radius:12px;padding:12px 14px}.lb-list li.top{border-color:#e6c08f;background:#fff6e3}
+.lb-rank{width:30px;text-align:center;font:600 18px Fraunces,serif;color:#a07a5e}.lb-name{flex:1;min-width:0;font:600 16px Fraunces,serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.lb-count{color:var(--orange);font-weight:700;white-space:nowrap}.lb-visit{background:var(--orange);color:#fff;text-decoration:none;font-weight:600;font-size:12px;border-radius:16px;padding:6px 12px}
+.lb-empty{background:#fffaf2;border:1px dashed #e0c7a6;border-radius:12px;padding:20px;color:#8f7462;line-height:1.6}.lb-actions{margin-top:26px}
+.home-lb{display:block;margin:16px auto 0;font-size:14px}
+@media(max-width:760px){.topbar .nav-link{display:none}.topbar nav{gap:8px}.menu-backdrop{place-items:end stretch;padding:0}.menu-backdrop .modal{width:100%;border-radius:22px 22px 0 0;max-height:88vh}.lb-list li{padding:10px}.lb-name{font-size:14px}.card-pager{font-size:11px}}
+.brand{white-space:nowrap}@media(max-width:760px){.topbar nav .share-button[data-new-table]{display:none}}
+/* Menu: warm fall paper instead of the old green panel */
+.menu-backdrop .modal{position:relative;overflow:hidden;background:linear-gradient(165deg,#fffaf1 0%,#fbeedb 55%,#f4dcbc 100%);color:var(--ink);border:2px solid #ecd0a8;box-shadow:0 30px 70px #5a361f55,inset 0 0 0 6px #fff8ec}
+.menu-backdrop .modal-x{background:#f3dcbc;color:#8f5a3d;z-index:2}
+.menu-head{position:relative;text-align:center;padding-top:4px}
+.menu-crest{display:inline-grid;place-items:center;width:64px;height:64px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffd9a8,#e9944f);font-size:34px;box-shadow:0 8px 18px #b8642f44,inset 0 -4px 0 #c96f35;animation:crest-in .6s cubic-bezier(.2,1.4,.4,1) both,crest-wobble 4s ease-in-out .8s infinite}
+.menu-title{color:#4b352c;font:600 34px Fraunces,serif;margin:10px 0 0;letter-spacing:-.02em}
+.menu-sub{margin:2px 0 0;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orange)}
+.menu-list{position:relative;margin-top:18px}
+.menu-list li+li{border-top:1px dashed #e2c29b}
+.menu-list li{animation:menu-item .45s cubic-bezier(.2,.8,.2,1) both}
+.menu-list li:nth-child(2){animation-delay:.05s}.menu-list li:nth-child(3){animation-delay:.1s}.menu-list li:nth-child(4){animation-delay:.15s}.menu-list li:nth-child(5){animation-delay:.2s}.menu-list li:nth-child(6){animation-delay:.25s}.menu-list li:nth-child(7){animation-delay:.3s}
+.menu-list button,.menu-list a{color:var(--ink);font-weight:500;border-radius:14px;padding:11px 8px;transition:background .2s,transform .2s}
+.menu-list button:hover,.menu-list a:hover{color:var(--ink);background:#fff3e0;transform:translateX(4px)}
+.menu-list .mi{flex:none;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-size:22px;opacity:1;background:#f8e2c4;box-shadow:inset 0 -3px 0 #ecc795}
+.menu-list button:hover .mi,.menu-list a:hover .mi{transform:rotate(-8deg) scale(1.06);transition:transform .2s}
+.menu-list b{color:var(--orange);font-weight:700}
+.menu-list em{background:var(--orange);color:#fff6e7;font-weight:700}
+.menu-foot{color:#a3806a}.menu-foot button,.menu-foot a{color:#9a6a4a}.menu-foot button:hover,.menu-foot a:hover{color:var(--orange)}
+.menu-leaves{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.menu-leaves span{position:absolute;top:-40px;font-size:22px;opacity:.55;left:calc(8% + var(--d) * 20%);animation:leaf-fall calc(9s + var(--d) * 1.3s) linear calc(var(--d) * -2.1s) infinite}
+@keyframes leaf-fall{0%{transform:translate(0,0) rotate(0)}50%{transform:translate(24px,55vh) rotate(160deg)}100%{transform:translate(-12px,110vh) rotate(320deg)}}
+@keyframes menu-item{from{opacity:0;transform:translateX(18px)}}
+@keyframes crest-in{from{opacity:0;transform:scale(.4) rotate(-20deg)}}
+@keyframes crest-wobble{0%,100%{transform:rotate(0)}6%{transform:rotate(-8deg)}12%{transform:rotate(6deg)}18%{transform:rotate(0)}}
+@media(prefers-reduced-motion:reduce){.menu-leaves{display:none}.menu-list li,.menu-crest{animation:none}}
+/* Card form: works on phones. Stickers are a swipeable row, the send button stays visible. */
+.sticker-pick{min-width:0;display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 0}
+.sticker-pick legend{width:100%;margin-bottom:6px}
+.sticker-pick label{flex:none;width:56px;height:56px;aspect-ratio:auto;padding:6px;border-radius:14px}
+.sticker-pick label:has(input:checked){transform:translateY(-2px);box-shadow:0 6px 12px #bd633d33}
+.field input,.field textarea{font-size:16px}
+[data-card-form] .modal-actions{position:sticky;bottom:-24px;z-index:3;margin:14px -26px -24px;padding:14px 26px 20px;background:linear-gradient(180deg,#fffaf100 0,#fffaf1 22%);}
+@media(max-width:760px){
+  .modal-backdrop{place-items:end stretch;padding:0}
+  .modal-backdrop .modal{width:100%;max-height:92dvh;border-radius:24px 24px 0 0;padding:22px 18px 18px;animation:sheet-up .25s cubic-bezier(.2,.8,.2,1)}
+  .modal-backdrop .modal:before{content:'';display:block;width:44px;height:5px;border-radius:5px;background:#e3cdb0;margin:-8px auto 12px}
+  .modal h2{font-size:24px;padding-right:40px}
+  .sticker-pick{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 8px;margin-left:-2px;-webkit-overflow-scrolling:touch}
+  .sticker-pick label{scroll-snap-align:start;width:60px;height:60px}
+  .field textarea{min-height:110px}
+  .field-row .check{margin:0 0 4px}
+  [data-card-form] .modal-actions{margin:12px -18px -18px;padding:12px 18px calc(16px + env(safe-area-inset-bottom))}
+  [data-card-form] .modal-actions .secondary{flex:0 0 auto}
+  [data-card-form] .modal-actions .primary{flex:1;justify-content:center}
+}
+@keyframes sheet-up{from{transform:translateY(40px);opacity:0}}
+.card-read.sealed .card-read-icon{filter:saturate(.6)}
+.card-read.sealed .card-message{font-size:24px}
+/* Writer's name under each card on the table */
+.card-sticker .sticker-name{position:absolute;left:50%;top:100%;transform:translate(-50%,6px);max-width:120px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#fffaf1f2;border:1px solid #e6c9a3;color:#6c4b3b;font:700 11px/1.2 'DM Sans',sans-serif;padding:3px 8px;border-radius:10px;box-shadow:0 3px 8px #75472b22;pointer-events:none}
+@media(max-width:760px){.card-sticker .sticker-name{font-size:9px;padding:2px 6px;max-width:80px;transform:translate(-50%,3px)}}
+/* Table pages: a clear switcher when one table fills up */
+.card-pager{gap:10px;padding:6px 8px;font-size:14px;background:#4b352ce8;box-shadow:0 8px 18px #3b261c44}
+.card-pager span{display:flex;flex-direction:column;align-items:center;line-height:1.1}
+.card-pager span small{font-size:11px;font-weight:500;opacity:.8}
+.card-pager button{width:34px;height:34px;font-size:20px;background:#ffffff33}
+.card-pager button:not(:disabled):hover{background:#ffffff55}
+@media(max-width:760px){.card-pager{font-size:12px;padding:4px 6px}.card-pager button{width:30px;height:30px}}
+/* Prettier cards: the sticker itself, a wax seal, no white tile */
+.card-sticker{background:none;border:0;box-shadow:none;padding:0;overflow:visible;filter:drop-shadow(0 8px 6px #5a361f3d)}
+.card-sticker img{width:100%;height:100%;object-fit:contain;transition:transform .2s;animation:card-bob 3.6s ease-in-out infinite}
+.card-sticker:nth-child(3n) img{animation-delay:-1.2s}.card-sticker:nth-child(3n+1) img{animation-delay:-2.4s}
+.card-sticker:hover img,.card-sticker:focus-visible img{transform:scale(1.12) rotate(-5deg)}
+.card-sticker>span:not(.seal){font-size:30px;color:var(--orange)}
+.card-sticker i{display:none}
+.card-sticker .seal{position:absolute;right:-6px;bottom:-4px;width:24px;height:24px;display:grid;place-items:center;border-radius:50% 46% 52% 48%;background:radial-gradient(circle at 35% 30%,#d4555f,#9e3e49 60%,#7d2d36);color:#ffd9cf;font-size:12px;line-height:1;box-shadow:0 2px 4px #4a1a2055,inset 0 -2px 0 #6e232c}
+.card-sticker .sticker-name{background:linear-gradient(180deg,#cf7447,#b35a33);border:0;color:#fff6e8;box-shadow:0 3px 8px #8a3f1f40}
+@keyframes card-bob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-4px) rotate(2deg)}}
+@media(max-width:760px){.card-sticker .seal{width:18px;height:18px;font-size:9px;right:-4px;bottom:-3px}}
+@media(prefers-reduced-motion:reduce){.card-sticker img{animation:none}}
+/* ---------- Animations (all off for prefers-reduced-motion) ---------- */
+/* Burst of little leaves, hearts and sparkles */
+.burst{position:fixed;z-index:300;width:0;height:0;pointer-events:none}
+.burst span{position:absolute;left:0;top:0;font-size:20px;transform:translate(-50%,-50%);animation:burst-fly 1.05s cubic-bezier(.15,.7,.3,1) both;will-change:transform,opacity}
+@keyframes burst-fly{0%{opacity:0;transform:translate(-50%,-50%) scale(.3)}15%{opacity:1}70%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy) + 40px)) rotate(var(--r)) scale(1)}}
+/* A new piece pops onto the table; a dragged piece settles */
+.placed-item.pop-in{animation:item-pop .55s cubic-bezier(.2,1.5,.4,1) both}
+.placed-item.settle{animation:item-settle .4s cubic-bezier(.2,1.6,.4,1)}
+@keyframes item-pop{0%{opacity:0;scale:.2}100%{opacity:1;scale:1}}
+@keyframes item-settle{0%{scale:1.08}100%{scale:1}}
+/* Steam from hot food */
+.placed-item.fx-steam::before,.placed-item.fx-steam::after{content:'';position:absolute;left:42%;top:2%;width:14%;height:34%;border-radius:50%;background:radial-gradient(ellipse at center,#fffdf6e6 0,#fffdf600 70%);filter:blur(4px);pointer-events:none;opacity:0;animation:steam 3.2s ease-out infinite}
+.placed-item.fx-steam::after{left:54%;animation-delay:1.6s}
+@keyframes steam{0%{opacity:0;transform:translateY(10%) scaleX(.6)}25%{opacity:.85}100%{opacity:0;transform:translateY(-80%) translateX(8px) scaleX(1.4)}}
+/* Flickering candles */
+.placed-item.fx-flicker img{animation:flicker 2.6s ease-in-out infinite}
+.placed-item.fx-flicker::after{content:'';position:absolute;left:25%;top:-5%;width:50%;height:45%;border-radius:50%;background:radial-gradient(circle,#ffd27a88 0,#ffd27a00 70%);pointer-events:none;animation:glow 2.6s ease-in-out infinite}
+@keyframes flicker{0%,100%{filter:drop-shadow(0 7px 4px #53312238) brightness(1)}20%{filter:drop-shadow(0 7px 4px #53312238) brightness(1.08)}45%{filter:drop-shadow(0 7px 4px #53312238) brightness(.96)}70%{filter:drop-shadow(0 7px 4px #53312238) brightness(1.1)}}
+@keyframes glow{0%,100%{opacity:.7;transform:scale(1)}45%{opacity:.45;transform:scale(.92)}70%{opacity:.9;transform:scale(1.06)}}
+/* A new card flutters down onto the table */
+.card-sticker.landed img{animation:card-land .9s cubic-bezier(.2,.9,.3,1.2) both,card-bob 3.6s ease-in-out .9s infinite}
+.card-sticker.landed .seal{animation:seal-stamp .35s cubic-bezier(.2,1.8,.4,1) .75s both}
+@keyframes card-land{0%{opacity:0;transform:translate(-40px,-160px) rotate(-35deg) scale(.5)}55%{opacity:1;transform:translate(10px,8px) rotate(8deg) scale(1.08)}75%{transform:translate(-4px,-3px) rotate(-4deg) scale(.98)}100%{transform:none}}
+@keyframes seal-stamp{0%{opacity:0;transform:scale(2.2)}100%{opacity:1;transform:none}}
+/* Pieces wiggle a little when you point at them in the studio */
+#table-canvas .placed-item:not(.readonly):hover img{animation:wiggle .5s ease-in-out}
+@keyframes wiggle{0%,100%{rotate:0deg}30%{rotate:-4deg}60%{rotate:3deg}}
+@media(prefers-reduced-motion:reduce){
+  .burst{display:none}
+  .placed-item.pop-in,.placed-item.settle,.placed-item.fx-flicker img,.card-sticker.landed img,.card-sticker.landed .seal,#table-canvas .placed-item:hover img{animation:none}
+  .placed-item.fx-steam::before,.placed-item.fx-steam::after,.placed-item.fx-flicker::after{display:none}
+}
+.table-canvas .card-sticker{width:max(46px,8.5cqw);height:max(46px,8.5cqw)}
+/* Share sheet */
+.share-quick{display:grid;grid-template-columns:repeat(auto-fit,minmax(88px,1fr));gap:8px;margin:14px 0 4px}
+.share-btn{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 6px;border-radius:16px;background:#fff3e2;border:1px solid #efd6b4;color:var(--ink);font-size:13px;font-weight:600;text-decoration:none;transition:transform .15s,background .15s}
+.share-btn:hover{background:#fde8cc;transform:translateY(-2px)}
+.sb-ico{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:20px;background:#fffaf1;box-shadow:inset 0 -2px 0 #efd6b4}
+.sb-ico.wa{background:#25d366;color:#fff;font-size:22px;box-shadow:none}
+.share-msg{margin-top:14px;background:#fff7ea;border:1px solid #efd6b4;border-radius:16px;padding:12px}
+.tpl-chips{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.chip{padding:7px 14px;border-radius:20px;background:#f6e4cb;color:#8f5a3d;font-size:13px;font-weight:600}
+.chip.on{background:var(--orange);color:#fff6e8}
+#share-msg{width:100%;border:1px solid #e3d2bb;border-radius:12px;padding:10px 12px;font:16px/1.45 'DM Sans',sans-serif;color:var(--ink);background:#fffdf8;resize:vertical}
+.share-msg .secondary{margin-top:8px;padding:9px 14px}
+.share-qr{display:flex;gap:16px;align-items:center;margin-top:14px;padding:14px;border-radius:16px;background:linear-gradient(135deg,#fff3e2,#fbe2c4)}
+.share-qr .qr{flex:none;width:118px;height:118px;border-radius:12px;box-shadow:0 6px 14px #8a5a3a26}
+.share-qr b{font:600 18px Fraunces,serif}.share-qr p{margin:4px 0 10px;color:#7d6253;font-size:14px;line-height:1.4}
+.share-qr .primary{padding:10px 14px;font-size:14px}
+.share-details{margin-top:14px;border-top:1px dashed #e2c29b;padding-top:10px}
+.share-details summary{cursor:pointer;font-weight:600;color:#8f5a3d;padding:6px 0}
+.share-details[open] summary{margin-bottom:10px}
+@media(max-width:760px){.share-qr{flex-direction:column;text-align:center}.share-qr .qr{width:150px;height:150px}}
+.settings-link{display:block;width:100%;text-align:left;background:none;color:#8f5a3d;font-weight:600;font-size:13px;padding:4px 2px 16px}.settings-link:hover{color:var(--orange)}
+/* Sign in */
+.google-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:12px;padding:13px 16px;border-radius:12px;background:#fff;border:1px solid #dadce0;color:#3c4043;font-weight:600;font-size:15px;box-shadow:0 1px 2px #3c40431a}
+.google-btn:hover{background:#f8f9fa}
+.google-btn .g{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;background:conic-gradient(#ea4335 0 25%,#fbbc05 0 50%,#34a853 0 75%,#4285f4 0);font-size:12px}
+.or-line{display:flex;align-items:center;gap:10px;color:#a38a78;font-size:13px;margin:14px 0 4px}.or-line:before,.or-line:after{content:'';flex:1;height:1px;background:#ead3b4}

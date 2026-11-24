@@ -1,17 +1,24 @@
 {
-  "name": "harvest-table",
+  "name": "decothanks",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "smoke": "node scripts/smoke.mjs",
+    "check": "npm run build && npm run smoke && npm run test:e2e",
+    "test:e2e": "playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.1",
     "vite": "^8.3.8"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.119.2"
-  }
+    "@supabase/supabase-js": "^2.119.2",
+    "qrcode-generator": "^2.0.4"
+  },
+  "description": "Decorate a Thanksgiving table, share the link, and collect thank-you cards from friends.",
+  "license": "MIT"
 }

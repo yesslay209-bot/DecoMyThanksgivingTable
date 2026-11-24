@@ -1,0 +1,20 @@
+name: Idea or feature
+description: Suggest something new for DecoThanks
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Who is it for, and why?
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Helping out
+      options:
+        - label: I'd like to work on this myself
