@@ -4,7 +4,15 @@
     {
       "name": "pages-preview",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["vite", "preview", "--port", "4173", "--strictPort", "--base", "/DecoMyThanksgivingTable/"],
+      "runtimeArgs": [
+        "vite",
+        "preview",
+        "--port",
+        "4173",
+        "--strictPort",
+        "--base",
+        "/"
+      ],
       "port": 4173
     }
   ]

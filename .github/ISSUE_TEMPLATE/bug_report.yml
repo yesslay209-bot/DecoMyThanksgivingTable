@@ -1,0 +1,27 @@
+name: Bug report
+description: Something on the site is broken or looks wrong
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: e.g. iPhone 15, Safari / Windows, Chrome
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Table link (optional)
+      description: Only if you're comfortable sharing it. Anyone with the link can read the table's cards.
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
